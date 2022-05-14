@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+:root{
+    /* Colors */
+    --body-color:#E4E9F7;
+    --sidebar-color:#FFF;
+    --pirmary-color:#695CFE;
+    --primary-color-light:#F6F5FF;
+    --toggle-color:#DDD;
+    --text-color:#707070;
+
+}
+
+/* .white_btn:hover{
+	background: var(--pirmary-color);
+}
+.white_btn:hover{
+	color: var(--sidebar-color);
+} */
+
+.link{
+	text-decoration: none;
+	color: black;
+}
+
+.myStyle{
+	color: black;
+	text-align: center;
+}
+
+.navbar {
+	width: 150px;
+	height: 765px;
+	background-color: #695CFE;
+	/* display: flex; */
+	align-items: center;
+	text-align: center;
+	/* margin-top: 100px; */
+	/* justify-content: space-between; */
+}
+
+.main_container{
+	/* overflow-x: hidden; */
+	/* height: 800px; */
+	width: 100%;
+	background-color: red;
+}
+
+.navbar h1 {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	padding: 15px;
+	/* margin-left: 20px; */
+}
+
+.sideBtns{
+	margin-top: 50px;
+}
+
+
+.logoutBtn{
+	margin-top: 160px;
+}
+
+.navbar p{
+	color: white;
+	font-size: 16px;
+	/* margin-top: 65px; */
+	/* margin-right: 970px; */
+	/* float: left; */
+}
+
+.white_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: #F6F5FF;
+	border-radius: 20px;
+	width: 120px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 10px;	
+	
+	/* margin-right: 20px; */
+}
+
