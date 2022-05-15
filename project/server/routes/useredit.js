@@ -3,8 +3,6 @@ const { User, validate } = require("../models/user");
 
 router.get("/:id",(req, res)=>{
     const id = req.params.id;
-    // console.log("Hn"+ id);
-    // console.log(req.body);
     User.findById(id, (err,doc)=>{
       if(err){
         res.send(err);
@@ -12,9 +10,7 @@ router.get("/:id",(req, res)=>{
       else{
         res.send(doc);
         console.log(doc);
-        // console.log("Worked");
       }
-      // console.log(doc);
     })
   })
 
