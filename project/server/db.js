@@ -6,7 +6,7 @@ module.exports = () => {
 		useUnifiedTopology: true,
 	};
 	try {
-		mongoose.connect('mongodb://localhost:27017/authMern', connectionParams);
+		mongoose.connect('mongodb://localhost:27017/<dbname>', connectionParams);
 		console.log("Connected to database successfully");
 	} catch (error) {
 		console.log(error);

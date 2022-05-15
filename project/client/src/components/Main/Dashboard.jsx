@@ -12,11 +12,7 @@ import { useEffect } from "react";
 
 const Dashboard = (props) => {
   let dt = JSON.parse(localStorage.getItem("usData"));
-  console.log(`data is ${dt._id}`);
-  // console.log(`data is ${dt.firstName}`);
-  // console.log(`data is ${dt.lastName}`);
-  // console.log(`data is ${dt.firstName`);
-  // console.log(`data is ${dt.lasttName`);
+
   props.setloginUserdet(dt.firstName);
   props.setloginUserlname(dt.lastName);
   props.setID(dt._id);
@@ -29,10 +25,7 @@ const Dashboard = (props) => {
     });
   });
 
-  
-  // console.log(JSON.stringify(dt)); 
-    // console.log(Document.cookie);
-    // console.log("hey");
+ 
    
     const deleteEmployee = (id)=>{
       axios.delete(`http://localhost:8080/api/delete/${id}`).then((response) =>{
@@ -76,7 +69,7 @@ const Dashboard = (props) => {
             <td>{val.disease}</td>
             <td>{val.medicineTime}</td>
             <td>{val.medicinePby}</td>
-            <td><button style={delIconBtn} onClick={() => deleteEmployee(dt._id)}><MdOutlineDeleteSweep /></button></td>
+            <td><button style={delIconBtn} onClick={() => deleteEmployee(val._id)}><MdOutlineDeleteSweep /></button></td>
             
             </tr>
         })}
@@ -91,10 +84,3 @@ const Dashboard = (props) => {
 
 export default Dashboard;
 
-{/* <tr>
-<td>Acetaminophen Systemic</td>
-<td>Diabetes</td>
-<td>7:00AM</td>
-<td><MdPendingActions style={stsIcon}/></td>
-<td><Link to={'/editmedi'}><FiEdit2 /></Link> | <button style={delIconBtn}><MdOutlineDeleteSweep /></button></td>
-</tr> */}

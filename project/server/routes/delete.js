@@ -6,8 +6,7 @@ const Medi = require("../models/medi");
 router.delete("/:id",(req, res) => {
     console.log('reched herw');
     let id = req.params.id;
-    console.log(id);
-    Medi.findOneAndDelete({kid:id},(err,doc) =>{
+    Medi.findOneAndDelete({_id:id},(err,doc) =>{
         if(err){
           console.log(err);
         }
